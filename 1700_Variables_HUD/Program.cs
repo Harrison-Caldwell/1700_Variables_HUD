@@ -24,7 +24,7 @@ namespace _1700_Variables_HUD
             int baseShields;
             baseShields = 150;
             baseHealth = 100;
-            Banana = 1.0f;
+            Banana = 0.75f;
             healShields = 50;
             healHealth = 25; 
             enemyKill = 50;
@@ -41,7 +41,7 @@ namespace _1700_Variables_HUD
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
@@ -60,12 +60,12 @@ namespace _1700_Variables_HUD
             Console.WriteLine(" ");
             Console.WriteLine("--------------");
 
-            Score = (int)(Score + enemyKill + enemyKill * ScoreMultiplier);
+            Score = (Score + enemyKill + enemyKill * ScoreMultiplier);
             Shields = Shields - Bodyshot;
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
@@ -79,13 +79,13 @@ namespace _1700_Variables_HUD
             Console.WriteLine("--------------");
 
             ScoreMultiplier = ScoreMultiplier + Banana;
-            Score = (int)(Score + enemyKill * ScoreMultiplier);
+            Score = (Score + enemyKill * ScoreMultiplier);
             Shields = Shields - Headshot - Headshot;
 
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
@@ -104,7 +104,7 @@ namespace _1700_Variables_HUD
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
@@ -118,12 +118,15 @@ namespace _1700_Variables_HUD
             Console.WriteLine("--------------");
 
             ScoreMultiplier = ScoreMultiplier + Banana;
-            Score = Score + enemyKill + enemyKill + enemyKill * ScoreMultiplier;
+            Score = Score + enemyKill;
+            Score = Score + enemyKill;
+            Score = Score + enemyKill;
+            Score = Score * ScoreMultiplier;
             Shields = Shields - Headshot;
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
@@ -137,12 +140,13 @@ namespace _1700_Variables_HUD
             Console.WriteLine("--------------");
 
             Score = Score + enemyKill;
-            Shields = Shields - Headshot - Headshot;
+            Shields = Shields - Headshot;
+            Shields = Shields - Headshot;    
             Health = Health - Bodyshot;
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
@@ -157,10 +161,11 @@ namespace _1700_Variables_HUD
 
             Health = Health + healHealth;
             ScoreMultiplier = ScoreMultiplier + Banana;
+            Score = Score * ScoreMultiplier;
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
@@ -175,10 +180,11 @@ namespace _1700_Variables_HUD
 
             Shields = Shields + healShields;
             Score = Score + enemyKill;
+            Score = Score * ScoreMultiplier;
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
@@ -191,12 +197,15 @@ namespace _1700_Variables_HUD
             Console.WriteLine(" ");
             Console.WriteLine("--------------");
 
-            ScoreMultiplier = ScoreMultiplier + Banana + Banana;
-            Score = Score + enemyKill + enemyKill + enemyKill;
+            ScoreMultiplier = ScoreMultiplier + Banana;
+            ScoreMultiplier = ScoreMultiplier + Banana;
+            Score = Score + enemyKill;
+            Score = Score + enemyKill;
+            Score = Score + enemyKill;
 
             Console.WriteLine("Banana Brain Studios Presents:");
             Console.WriteLine("Monkey Business");
-            Console.WriteLine("Score: " + Score * ScoreMultiplier);
+            Console.WriteLine("Score: " + Score);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Shields: " + Shields);
             Console.WriteLine("Lives: " + Lives);
